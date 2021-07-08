@@ -2,44 +2,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header .up_header {
   background-color: #0282f9;
-  height: 30px;
+  height: 25px;
   color: white;
+  display: flex;
+  align-items: center;
 }
-
 header .up_header .up_content {
   width: 60%;
   margin: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  text-align: right;
 }
-
 header .up_header .up_content span {
   margin: 10px;
 }
-
 header .bottom_header {
-  height: 100px;
-  background-color: grey;
+  width: 60%;
+  margin: auto;
+  height: 115px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-
+header .bottom_header img {
+  height: 80px;
+}
 header .bottom_header ul {
   list-style: none;
 }
-
 header .bottom_header ul li {
   display: inline;
   margin: 20px;
 }
-
-.jumbotron {
-  height: 300px;
+header .bottom_header span {
+  width: 120px;
+  text-align: right;
+  border-bottom: 2px solid #0282f9;
 }
 
+.jumbotron {
+  height: 400px;
+  background-color: lightblue;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.comics {
+  background-color: #1c1c1c;
+  padding: 50px;
+  position: relative;
+}
+.comics .genre {
+  position: absolute;
+  top: -3%;
+  left: 15%;
+}
+.comics .genre span {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 20px;
+}
+.comics .container_card {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.comics .container_card .card {
+  height: 180px;
+  width: 180px;
+  background-color: white;
+  margin: 35px 20px;
+}
+.comics .container_card .card img {
+  height: 180px;
+  width: 180px;
+}
+.comics .container_card .card span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+}
+.comics .prova {
+  text-align: center;
+}
+.comics .prova span {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 100px;
+}

@@ -1,51 +1,59 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.app')
 
-        <title>Laravel</title>
+@section('header_content')
+    <div class="up_header">
+        <div class="up_content">
+            <span>DC POWER VISA <i class="far fa-registered"></i></span>
+            <span>ADDITIONAL DC SITES <i class="fas fa-caret-down"></i></span>
+        </div>
+    </div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <div class="bottom_header">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        
-    </head>
-    <body>
+        <img src="{{asset('img/dc-logo.png')}}" alt="">
+        <div>
+            <ul>
+                <li>CHARACTERS</li>
+                <li>COMICS</li>
+                <li>MOVIES</li>
+                <li>TV</li>
+                <li>GAMES</li>
+                <li>COLLECTIBLES</li>
+                <li>VIDEOS</li>
+                <li>FANS</li>
+                <li>NEWS</li>
+                <li>SHOP <i class="fas fa-caret-down"></i></li>
+            </ul>
+        </div>
 
-
-        <header id="site_header">
-            <div class="up_header">
-                <div class="up_content">
-                    <span>DC POWER VISA</span>
-                    <span>ADDITIONAL DC SITES</span>
-                </div>
-            </div>
-
-            <div class="bottom_header">
-                <ul>
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
-                </ul>
-            </div>
-        </header>
-        
+        <span>Search <i class="fas fa-search"></i></span>
+    </div>
+@endsection
 
 
-        <main id="site_main">
-            <div class="jumbotron">
-            </div>
-        
-        </main>
-    </body>
-</html>
+<!-- Jumbotron -->
+@section('main_content')
+<div class="jumbotron"></div>
+<!-- /Jumbotron -->
+
+<!-- Comics -->
+<div class="comics">
+    <div class="genre">
+        <span>Current Series</span>
+    </div>
+
+    <div class="container_card">
+        @foreach($comics as $element)
+            <div class="card">
+                <img src="{{$element['thumb']}}" alt="">
+                <span>{{$element['series']}}</span>
+            </div>    
+        @endforeach
+    </div>
+
+    <div class="prova">
+        <span>LOAD MORE</span> 
+    </div>
+</div>
+@endsection
+<!-- /Comics -->

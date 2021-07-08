@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .up_header {
+  background-color: #0282f9;
+  height: 30px;
+  color: white;
+}
+
+header .up_header .up_content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .up_header .up_content span {
+  margin: 10px;
+}
+
+header .bottom_header {
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .bottom_header ul {
+  list-style: none;
+}
+
+header .bottom_header ul li {
+  display: inline;
+  margin: 20px;
+}
+
+.jumbotron {
+  height: 300px;
+}
+

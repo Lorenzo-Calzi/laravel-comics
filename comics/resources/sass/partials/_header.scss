@@ -1,0 +1,41 @@
+header{
+
+    .up_header{
+        background-color: rgba(2, 130, 249, 1);
+        height: 30px;
+        color: white;
+
+        .up_content{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            span{
+                margin: 10px;
+            }
+        }
+    }
+    .bottom_header{
+        height: 100px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            list-style: none;
+
+            li{
+                display: inline;
+                margin: 20px;
+            }
+        }
+    }
+
+}
+
+.jumbotron{
+    height: 300px;
+}

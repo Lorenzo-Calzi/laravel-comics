@@ -1,0 +1,52 @@
+.sign{
+    /* width: 65%; */
+    background-color: rgba(48, 48, 48, 1);
+    /* height: 200px; */
+    margin: auto;
+    padding: 50px;
+
+    .container_sign{
+        width: 65%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sign_left{
+
+            span{
+                color: white;
+                padding: 10px 15px;
+                border: 2px solid rgba(2, 130, 249, 1);
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgba(2, 130, 249, 1);;
+                    border: 2px solid white;
+                }
+            }
+        }
+        .sign_right{
+            display: flex;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                color: rgba(2, 130, 249, 1);
+                margin-right: 20px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            img{
+                margin: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    
+
+}

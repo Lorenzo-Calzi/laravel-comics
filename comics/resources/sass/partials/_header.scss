@@ -14,13 +14,17 @@ header{
 
             span{
                 margin: 10px;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
     .bottom_header{
         width: 60%;
         margin: auto;
-        height: 115px;
+        padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -35,12 +39,27 @@ header{
             li{
                 display: inline;
                 margin: 20px;
+                font-weight: 500;
+                font-size: 13px;
+                padding-bottom: 38px;
+
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(2, 130, 249, 1);
+                    border-bottom: 4px solid rgba(2, 130, 249, 1);
+                }
             }
         }
         span{
             width: 120px;
             text-align: right;
-            border-bottom: 2px solid rgba(2, 130, 249, 1);
+            border-bottom: 4px solid rgba(2, 130, 249, 1);
+            font-weight: 500;
+            font-size: 13px;
+
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }

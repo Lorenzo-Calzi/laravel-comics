@@ -24,5 +24,10 @@
         <main id="site_main">
             @yield('main_content')
         </main>
+
+        <footer id="site_footer">
+            @yield('footer_content')
+        </footer>
+
     </body>
 </html>

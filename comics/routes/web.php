@@ -17,4 +17,29 @@ Route::get('/', function () {
 
     $comics = config('comics');
     return view('home', compact('comics'));
+
+    $comics = config('comics');
+    return view('characters', compact('comics'));
+
+    $comics = config('comics');
+    return view('movies', compact('comics'));
+
+    $comics = config('comics');
+    return view('tv', compact('comics'));
+
+    $comics = config('comics');
+    return view('games', compact('comics'));
+
+    $comics = config('comics');
+    return view('collectibles', compact('comics'));
+
+    $comics = config('comics');
+    return view('videos', compact('comics'));
+
+    $comics = config('comics');
+    return view('fans', compact('comics'));
+
+    $comics = config('comics');
+    return view('news', compact('comics'));
+
 });

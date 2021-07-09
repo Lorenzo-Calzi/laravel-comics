@@ -16,7 +16,7 @@
     <div class="container_card">
         @foreach($comics as $index => $comic)
             <div class="card">
-                <a href="{{route('comic', ['id' => $index])}}">
+                <a href="{{ route('comic', ['id' => $index] }}">
                     <img src="{{$comic['thumb']}}" alt="">;
                     <span>{{$comic['series']}}</span>;
                 </a>

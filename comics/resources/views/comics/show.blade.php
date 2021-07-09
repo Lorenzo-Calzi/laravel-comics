@@ -4,8 +4,6 @@
 
 @section('main_content')
 
-    <!-- <h1>Comics page</h1> -->
-
         <div class="comic">
             <div class="bg_blue">
                 <div class="container">
@@ -47,21 +45,12 @@
 
                         <div class="paragraph">
                             <span>Arty By</span>
-
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure minus fugit vel pariatur modi aperiam voluptas quibusdam blanditiis placeat!</p>
-                            <!-- $foreach($comics as $index => $comic)
-                                var_dump($comic)
-                            $endforeach -->
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum aliquam, nulla a alias iusto!</p>
                         </div>
 
                         <div class="paragraph">
                             <span>Written By</span>
-
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure minus fugit vel pariatur modi aperiam voluptas quibusdam blanditiis placeat!</p>
-
-                            <!-- $foreach($comics as $index => $comic)
-                                var_dump($comic)
-                            $endforeach -->
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum aliquam, nulla a alias iusto!</p>
                         </div>
                     </div>
 

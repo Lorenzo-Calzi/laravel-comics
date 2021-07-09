@@ -1,6 +1,5 @@
 @extends('layout.app')
 
-
 @section('main_content')
 
 <!-- Comics -->
@@ -53,6 +52,9 @@
         <span>dc power visa</span>
     </div>
 </div>
+
+
+
 <!-- /Infos -->
 
 @endsection

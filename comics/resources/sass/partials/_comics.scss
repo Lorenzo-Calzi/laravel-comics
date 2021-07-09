@@ -11,7 +11,7 @@
         span{
             text-transform: uppercase;
             font-size: 30px;
-            background-color: rgba(2, 130, 249, 1);
+            background-color: $brand_color;
             color: white;
             padding: 10px 20px;
         }
@@ -50,15 +50,15 @@
         text-align: center;
 
         span{
-            background-color: rgba(2, 130, 249, 1);
+            background-color: $brand_color;
             color: white;
             padding: 10px 100px;
 
             &:hover{
                 cursor: pointer;
-                color: rgba(2, 130, 249, 1);
+                color: $brand_color;
                 background-color: white; 
-                border: 1px solid rgba(2, 130, 249, 1); 
+                border: 1px solid $brand_color; 
             }
         }
     }

@@ -68,7 +68,6 @@ header .bottom_header span:hover {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
-  /* background-position: top; */
 }
 
 .comics {
@@ -268,4 +267,157 @@ header .bottom_header span:hover {
 }
 .sign .container_sign .sign_right img:hover {
   cursor: pointer;
+}
+
+.comic {
+  /* Desc */
+  /* /Desc */
+  /* More */
+  /* /More */
+  /* Infos */
+  /* /Infos */
+}
+.comic .bg_blue {
+  margin-bottom: 70px;
+  height: 80px;
+  background-color: #0282f9;
+  position: relative;
+}
+.comic .bg_blue img {
+  position: absolute;
+  top: -240px;
+  border: 1px solid white;
+}
+.comic .desc {
+  display: flex;
+  margin: 40px 0 80px 0;
+}
+.comic .desc .left_desc h2 {
+  color: #003f5e;
+}
+.comic .desc .left_desc .availability {
+  padding: 20px 30px;
+  margin: 10px 50px 10px 0;
+  background-color: #55ba59;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #357739;
+}
+.comic .desc .left_desc .availability span {
+  color: #bafd9c;
+}
+.comic .desc .left_desc .availability .available {
+  margin-right: 30px;
+  border-right: 1px solid #357739;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+.comic .desc .left_desc .availability strong {
+  color: white;
+}
+.comic .desc .left_desc p {
+  line-height: 25px;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.comic .desc img {
+  height: 250px;
+}
+.comic .hr {
+  height: 1px;
+  width: 98%;
+  margin: auto;
+  background-color: #e3e3e3;
+}
+.comic .more {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 120px;
+}
+.comic .more .talent {
+  width: 50%;
+  padding-right: 30px;
+}
+.comic .more .talent h4 {
+  color: #003f5e;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.comic .more .talent .paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+.comic .more .talent .paragraph span {
+  width: 35%;
+  color: #005ca3;
+}
+.comic .more .talent .paragraph p {
+  width: 65%;
+  color: #00bae6;
+}
+.comic .more .specs {
+  width: 50%;
+  padding-left: 30px;
+}
+.comic .more .specs h4 {
+  color: #003f5e;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.comic .more .specs .paragraph {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: flex-start; */
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+.comic .more .specs .paragraph span {
+  width: 20%;
+  color: #005ca3;
+  margin-right: 50px;
+}
+.comic .more .specs .paragraph p {
+  width: 80%;
+  color: #00bae6;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.comic .bg_white {
+  /* background-color: ; */
+  border-top: 1px solid #c4c4c4;
+}
+.comic .bg_white .infos {
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.comic .bg_white .infos .info {
+  border-right: 1px solid #c4c4c4;
+  border-bottom: none;
+  margin: 0;
+  padding: 20px;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.comic .bg_white .infos .info img {
+  height: 55px;
+  background-color: #b4b4b4;
+  border-radius: 5px;
+  padding: 5px;
+  color: grey;
+}
+.comic .bg_white .infos .info span {
+  color: #c4c4c4;
+  text-transform: uppercase;
 }

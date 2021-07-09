@@ -1,7 +1,7 @@
 header{
 
     .up_header{
-        background-color: rgba(2, 130, 249, 1);
+        background-color: $brand_color;
         color: white;
         display: flex;
         align-items: center;
@@ -44,15 +44,15 @@ header{
 
                 &:hover{
                     cursor: pointer;
-                    color: rgba(2, 130, 249, 1);
-                    border-bottom: 4px solid rgba(2, 130, 249, 1);
+                    color: $brand_color;
+                    border-bottom: 4px solid $brand_color;
                 }
             }
         }
         span{
             width: 120px;
             text-align: right;
-            border-bottom: 4px solid rgba(2, 130, 249, 1);
+            border-bottom: 4px solid $brand_color;
             font-weight: 500;
             font-size: 13px;
 

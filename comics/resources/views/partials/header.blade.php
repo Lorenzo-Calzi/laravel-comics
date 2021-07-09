@@ -25,4 +25,9 @@
 
         <span>Search <i class="fas fa-search"></i></span>
     </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron"></div>
+    <!-- /Jumbotron -->
+    
 </header>

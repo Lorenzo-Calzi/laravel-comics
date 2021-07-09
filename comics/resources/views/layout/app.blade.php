@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title -->
-        <title>Laravel</title>
+        <title>DC Comics Page</title>
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}" type="image/x-icon"> 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +19,13 @@
     <body>
 
 
-        <header id="site_header">
-            @yield('header_content')  
-        </header>
+        @include('partials.header')
         
         <main id="site_main">
             @yield('main_content')
         </main>
 
-        <footer id="site_footer">
-            @yield('footer_content')
-        </footer>
+        @include('partials.footer')
 
     </body>
 </html>

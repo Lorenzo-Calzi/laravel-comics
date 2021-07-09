@@ -5,15 +5,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
 header .up_header {
   background-color: #0282f9;
-  height: 25px;
   color: white;
   display: flex;
   align-items: center;
 }
 header .up_header .up_content {
-  width: 60%;
+  width: 70%;
   margin: auto;
   text-align: right;
 }
@@ -64,7 +68,7 @@ header .bottom_header span:hover {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
 }
 
 .comics {
@@ -148,7 +152,6 @@ header .bottom_header span:hover {
 }
 
 .credits {
-  height: 400px;
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
   background-position: top;
@@ -229,7 +232,6 @@ header .bottom_header span:hover {
 .sign {
   /* width: 65%; */
   background-color: #303030;
-  /* height: 200px; */
   margin: auto;
   padding: 50px;
 }

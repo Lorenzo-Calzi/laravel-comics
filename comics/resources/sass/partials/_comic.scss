@@ -21,6 +21,7 @@
         .left_desc{
 
             h2{
+                text-transform: uppercase;
                 color: rgba(0, 63, 94, 1);
             }
             .availability{
@@ -51,9 +52,21 @@
                 font-size: 18px;
                 margin-right: 50px;
             }
-        } 
-        img{
-            height: 250px;
+        }
+        .adv{
+            position: relative;
+            padding-top: 10px;
+
+            span{
+                position: absolute;
+                top: -10px;
+                right: 0;
+                font-weight: 600;
+                color: rgb(56, 56, 56);
+            }
+            img{
+                height: 250px;
+            } 
         }   
     }
     /* /Desc */

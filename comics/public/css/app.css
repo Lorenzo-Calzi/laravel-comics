@@ -17,20 +17,18 @@ header .up_header {
   align-items: center;
 }
 header .up_header .up_content {
-  width: 70%;
-  margin: auto;
   text-align: right;
+  padding: 5px;
 }
 header .up_header .up_content span {
+  font-size: 12px;
   margin: 10px;
 }
 header .up_header .up_content span:hover {
   cursor: pointer;
 }
 header .bottom_header {
-  width: 60%;
-  margin: auto;
-  padding: 10px;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,25 +41,28 @@ header .bottom_header ul {
 }
 header .bottom_header ul li {
   display: inline;
-  margin: 20px;
+  margin: 15px;
   font-weight: 500;
-  font-size: 13px;
-  padding-bottom: 38px;
+  font-size: 15px;
+  padding-bottom: 42px;
 }
 header .bottom_header ul li:hover {
   cursor: pointer;
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
 }
-header .bottom_header span {
+header .bottom_header input {
   width: 120px;
   text-align: right;
-  border-bottom: 4px solid #0282f9;
+  border: none;
+  border-bottom: 3px solid #0282f9;
   font-weight: 500;
   font-size: 13px;
+  outline: none;
+  margin: 5px;
 }
-header .bottom_header span:hover {
-  cursor: pointer;
+header .bottom_header i {
+  font-size: 12px;
 }
 
 .jumbotron {
@@ -78,7 +79,7 @@ header .bottom_header span:hover {
 .comics .genre {
   position: absolute;
   top: -20px;
-  left: 270px;
+  left: 350px;
 }
 .comics .genre span {
   text-transform: uppercase;
@@ -88,9 +89,8 @@ header .bottom_header span:hover {
   padding: 10px 20px;
 }
 .comics .container_card {
-  width: 70%;
-  margin: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
@@ -100,18 +100,21 @@ header .bottom_header span:hover {
   background-color: white;
   margin: 35px 20px;
 }
-.comics .container_card .card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.comics .container_card .card a {
+  text-decoration: none;
 }
-.comics .container_card .card img {
+.comics .container_card .card a img {
   height: 180px;
   width: 180px;
 }
-.comics .container_card .card span {
+.comics .container_card .card a span {
   text-transform: uppercase;
   color: white;
   font-size: 13px;
+}
+.comics .container_card .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .comics .button {
   text-align: center;
@@ -130,9 +133,6 @@ header .bottom_header span:hover {
 
 .infos {
   background-color: #0282f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 .infos .info {
@@ -146,6 +146,7 @@ header .bottom_header span:hover {
   margin-right: 10px;
 }
 .infos .info span {
+  font-size: 13px;
   color: white;
   text-transform: uppercase;
 }
@@ -154,21 +155,16 @@ header .bottom_header span:hover {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
   background-position: top;
-  display: flex;
 }
 .credits .credit_left {
   width: 50%;
   height: 100%;
 }
 .credits .credit_left .container_left {
-  width: 70%;
-  margin: auto;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 80px;
 }
 .credits .credit_left .list_left {
-  margin: 20px;
+  margin: 20px 20px 20px 0;
 }
 .credits .credit_left .list_left ul {
   list-style: none;
@@ -176,11 +172,12 @@ header .bottom_header span:hover {
   margin-top: 20px;
 }
 .credits .credit_left .list_left ul h3 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .credits .credit_left .list_left ul li {
   color: #959595;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .credits .credit_left .list_left ul li:hover {
   cursor: pointer;
@@ -200,16 +197,14 @@ header .bottom_header span:hover {
 .credits .credit_left .other_list ul li {
   color: #959595;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .credits .credit_left .other_list ul li:hover {
   cursor: pointer;
   color: white;
 }
 .credits .credit_left .copyright {
-  width: 70%;
-  margin: auto;
   color: #959595;
-  padding-left: 210px;
   font-size: 12px;
 }
 .credits .credit_left .copyright a {
@@ -222,21 +217,19 @@ header .bottom_header span:hover {
 }
 .credits .credit_right {
   width: 50%;
-  height: 100%;
-}
-.credits .credit_right img {
-  height: 100%;
+  height: 420px;
+  position: relative;
+  background-image: url("../img/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .sign {
-  /* width: 65%; */
   background-color: #303030;
   margin: auto;
   padding: 50px;
 }
 .sign .container_sign {
-  width: 65%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -293,6 +286,7 @@ header .bottom_header span:hover {
   margin: 40px 0 80px 0;
 }
 .comic .desc .left_desc h2 {
+  text-transform: uppercase;
   color: #003f5e;
 }
 .comic .desc .left_desc .availability {
@@ -321,7 +315,18 @@ header .bottom_header span:hover {
   font-size: 18px;
   margin-right: 50px;
 }
-.comic .desc img {
+.comic .desc .adv {
+  position: relative;
+  padding-top: 10px;
+}
+.comic .desc .adv span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-weight: 600;
+  color: #383838;
+}
+.comic .desc .adv img {
   height: 250px;
 }
 .comic .hr {
@@ -420,4 +425,15 @@ header .bottom_header span:hover {
 .comic .bg_white .infos .info span {
   color: #c4c4c4;
   text-transform: uppercase;
+}
+
+.working {
+  background-color: #0282f9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.working h1 {
+  text-transform: uppercase;
+  font-size: 30px;
 }

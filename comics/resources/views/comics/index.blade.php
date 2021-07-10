@@ -1,3 +1,5 @@
+
+
 @extends('layout.app')
 
 @section('main_content')
@@ -8,12 +10,12 @@
         <span>Current Series</span>
     </div>
 
-    <div class="container_card">
+    <div class="container_card container">
         @foreach($comics as $index => $comic)
             <div class="card">
                 <a href="{{route('comic', ['id' => $index])}}">
-                    <img src="{{$comic['thumb']}}" alt="">;
-                    <span>{{$comic['series']}}</span>;
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <span>{{$comic['series']}}</span>
                 </a>
             </div>    
         @endforeach
@@ -27,34 +29,33 @@
 
 <!-- Infos -->
 <div class="infos">
-    <div class="info">
-        <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-        <span>digital comics</span>
-    </div>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center">
+        <div class="info">
+            <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+            <span>digital comics</span>
+        </div>
 
-    <div class="info">
-        <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
-        <span>dc merchandise</span>
-    </div>
+        <div class="info">
+            <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+            <span>dc merchandise</span>
+        </div>
 
-    <div class="info">
-        <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
-        <span>subscription</span>
-    </div>
+        <div class="info">
+            <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+            <span>subscription</span>
+        </div>
 
-    <div class="info">
-        <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">  
-        <span>comic shop locator</span>
-    </div>
+        <div class="info">
+            <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">  
+            <span>comic shop locator</span>
+        </div>
 
-    <div class="info">
-        <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="" style="height: 40px;">
-        <span>dc power visa</span>
+        <div class="info">
+            <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="" style="height: 40px;">
+            <span>dc power visa</span>
+        </div>
     </div>
 </div>
-
-
-
 <!-- /Infos -->
 
 @endsection

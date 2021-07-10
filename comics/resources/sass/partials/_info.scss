@@ -1,8 +1,5 @@
 .infos{
     background-color: $brand_color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 
     .info{
@@ -16,6 +13,7 @@
             margin-right: 10px;
         }
         span{
+            font-size: 13px;
             color: white;
             text-transform: uppercase;
         }

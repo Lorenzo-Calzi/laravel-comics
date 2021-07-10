@@ -6,7 +6,7 @@
     .genre{
         position: absolute;
         top: -20px;
-        left: 270px;
+        left: 350px;
 
         span{
             text-transform: uppercase;
@@ -18,9 +18,8 @@
     }
     
     .container_card{
-        width: 70%;
-        margin: auto;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 60px;
 
@@ -30,20 +29,26 @@
             background-color: white;
             margin: 35px 20px;
 
+            a{
+                text-decoration: none;
+                
+                img{
+                    height: 180px;
+                    width: 180px;
+                }
+                span{
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 13px;
+                }
+            }
+
             &:hover{
                 cursor: pointer;
                 transform: scale(1.1);
             }
             
-            img{
-                height: 180px;
-                width: 180px;
-            }
-            span{
-                text-transform: uppercase;
-                color: white;
-                font-size: 13px;
-            }
+            
         }
     }
     .button{

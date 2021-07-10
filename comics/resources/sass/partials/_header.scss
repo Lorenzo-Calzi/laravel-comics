@@ -7,11 +7,11 @@ header{
         align-items: center;
 
         .up_content{
-            width: 70%;
-            margin: auto;
             text-align: right;
+            padding: 5px;
 
             span{
+                font-size: 12px;
                 margin: 10px;
 
                 &:hover{
@@ -21,9 +21,7 @@ header{
         }
     }
     .bottom_header{
-        width: 60%;
-        margin: auto;
-        padding: 10px;
+        padding: 15px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,10 +35,10 @@ header{
 
             li{
                 display: inline;
-                margin: 20px;
+                margin: 15px;
                 font-weight: 500;
-                font-size: 13px;
-                padding-bottom: 38px;
+                font-size: 15px;
+                padding-bottom: 42px;
 
                 &:hover{
                     cursor: pointer;
@@ -49,16 +47,18 @@ header{
                 }
             }
         }
-        span{
+        input{
             width: 120px;
             text-align: right;
-            border-bottom: 4px solid $brand_color;
+            border: none;
+            border-bottom: 3px solid $brand_color;
             font-weight: 500;
             font-size: 13px;
-
-            &:hover{
-                cursor: pointer;
-            }
+            outline: none;
+            margin: 5px;
+        }
+        i{
+            font-size: 12px;
         }
     }
 }

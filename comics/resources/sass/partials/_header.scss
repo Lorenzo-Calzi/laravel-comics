@@ -39,6 +39,7 @@ header{
                 text-decoration: none;
                 color: rgba(70, 70, 70, 1);
                 padding-bottom: 44px;
+                position: relative;
 
                 &.active{
                     color: $brand_color; 
@@ -55,6 +56,14 @@ header{
                     font-weight: 500;
                     font-size: 15px;
                     text-transform: uppercase;
+
+                    i{
+                        position: absolute;
+                        right: 2px;
+                        top: 2px;
+                        color: $brand_color;
+                        vertical-align: middle;
+                    }
                 }
             }
         }

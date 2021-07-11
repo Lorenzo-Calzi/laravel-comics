@@ -58,7 +58,11 @@
             <ul>
                 @foreach($menu as $item)
                     <a href="{{$item['href']}}" class="{{Route::currentRouteName() === $item['text'] ? 'active' : ''}}">
-                        <li>{{$item['text']}}</li>
+                        @if ($item['text']==='shop')
+                            <li>{{$item['text']}} <i class="fas fa-sort-down"></i></li>
+                        @else
+                            <li>{{$item['text']}}</li>  
+                        @endif
                     </a>
                 @endforeach
             </ul>

@@ -47,6 +47,7 @@ header .bottom_header ul a {
   text-decoration: none;
   color: #464646;
   padding-bottom: 44px;
+  position: relative;
 }
 header .bottom_header ul a.active {
   color: #0282f9;
@@ -62,6 +63,13 @@ header .bottom_header ul a li {
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
+}
+header .bottom_header ul a li i {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: #0282f9;
+  vertical-align: middle;
 }
 header .bottom_header input {
   width: 120px;

@@ -47,13 +47,20 @@
                         <h4>Talent</h4>
 
                         <div class="paragraph">
-                            <span>Arty By</span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum aliquam, nulla a alias iusto!</p>
+                            <span>Arty by:</span>
+
+                            <?php $artists = ($comic['artists']) ?>
+                                <p> <?php echo(implode(", ", $artists)); ?> </p>   
+                            <?php ?>
                         </div>
 
                         <div class="paragraph">
-                            <span>Written By</span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum aliquam, nulla a alias iusto!</p>
+                            <span>Written by:</span>
+
+                            <?php $writer = ($comic['writers']) ?>
+                                <p> <?php echo(implode(", ", $writer));?> </p> 
+                            <?php ?>
+
                         </div>
                     </div>
 
@@ -72,7 +79,12 @@
 
                         <div class="paragraph">
                             <span>On Sale Date:</span>
-                            {{$comic['sale_date']}}
+
+                            <?php
+                                $date = $comic['sale_date'];
+                                $newDate = date("M d Y", strtotime($date));
+                                echo $newDate;
+                            ?>
                         </div>
                     </div>
                 </div>

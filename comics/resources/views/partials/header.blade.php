@@ -1,3 +1,61 @@
+<?php
+
+    $menu = [
+        [
+            'href' => route('characters'),
+            'text' => 'characters'
+        ],
+        [
+            'href' => route('comics'),
+            'text' => 'comics'
+        ],
+        [
+            'href' => route('movies'),
+            'text' => 'movies'
+        ],
+        [
+            'href' => route('tv'),
+            'text' => 'tv'
+        ],
+        [
+            'href' => route('games'),
+            'text' => 'games'
+        ],
+        [
+            'href' => route('collectibles'),
+            'text' => 'collectibles'
+        ],
+        [
+            'href' => route('fans'),
+            'text' => 'fans'
+        ],
+        [
+            'href' => route('news'),
+            'text' => 'news'
+        ],
+        [
+            'href' => route('shop'),
+            'text' => 'shop'
+        ],
+    ];
+
+    /* $currentPath= \Request::route()->getName();
+     ddd($currentPath);  */
+
+     
+    /* $currentPath= Route::currentRouteName();
+     ddd($currentPath); */
+
+     /* foreach($menu as $item){
+        ddd($item);
+     } */
+
+
+    
+?>
+
+
+
 <header id="site_header">
 <div class="up_header">
         <div class="up_content container">
@@ -7,19 +65,16 @@
     </div>
 
     <div class="bottom_header container">
-        <img src="{{asset('img/dc-logo.png')}}" alt="">
+        <a href="{{route('home')}}">
+            <img src="{{asset('img/dc-logo.png')}}" alt="">
+        </a>
         <div>
             <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP <i class="fas fa-caret-down" style="color: rgba(2, 130, 249, 1)"></i></li>
+                @foreach($menu as $item)
+                    <a href="{{$item['href']}}" class="{{Route::currentRouteName() === $item['text'] ? 'active' : ''}}">
+                        <li>{{$item['text']}}</li>
+                    </a>
+                @endforeach
             </ul>
         </div>
 

@@ -107,8 +107,9 @@
                     color: rgba(0, 92, 163, 1);
                 }
                 p{
-                    width: 65%;
+                    width: 75%;
                     color: rgba(0, 186, 230, 1);
+                    font-weight: 500;
                 }
             }
         } 
@@ -123,8 +124,6 @@
             }
             .paragraph{
                 display: flex;
-                /* justify-content: space-between;
-                align-items: flex-start; */
                 width: 100%;
                 border-top: 1px solid rgba(227, 227, 227, 1);
                 border-bottom: 1px solid rgba(227, 227, 227, 1);
@@ -140,6 +139,7 @@
                     color: rgba(0, 186, 230, 1);
                     text-transform: uppercase;
                     padding-left: 10px;
+                    font-weight: 500;
                 }
             }
 
@@ -149,7 +149,6 @@
 
     /* Infos */
     .bg_white{
-        /* background-color: ; */
         border-top: 1px solid rgba(196, 196, 196, 1);
 
         .infos{
@@ -174,10 +173,12 @@
                     border-radius: 5px;
                     padding: 5px;
                     color: grey;
+                    cursor: pointer;
                 }
                 span{
                     color: rgba(196, 196, 196, 1);
                     text-transform: uppercase;
+                    cursor: pointer;
                 }
             }  
         }

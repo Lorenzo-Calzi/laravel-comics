@@ -1,4 +1,3 @@
-
 <!-- Credits -->
 <div class="credits">
     <div class="container" style="display: flex;">

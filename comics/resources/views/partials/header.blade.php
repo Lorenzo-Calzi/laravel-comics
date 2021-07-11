@@ -39,21 +39,7 @@
         ],
     ];
 
-    /* $currentPath= \Request::route()->getName();
-     ddd($currentPath);  */
-
-     
-    /* $currentPath= Route::currentRouteName();
-     ddd($currentPath); */
-
-     /* foreach($menu as $item){
-        ddd($item);
-     } */
-
-
-    
 ?>
-
 
 
 <header id="site_header">

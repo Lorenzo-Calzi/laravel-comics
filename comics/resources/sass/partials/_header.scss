@@ -40,6 +40,10 @@ header{
                 color: rgba(70, 70, 70, 1);
                 padding-bottom: 44px;
 
+                &.active{
+                    color: $brand_color; 
+                }
+
                 &:hover{
                     cursor: pointer;
                     color: $brand_color;

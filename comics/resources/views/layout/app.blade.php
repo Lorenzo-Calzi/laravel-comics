@@ -18,7 +18,6 @@
     </head>
     <body>
 
-
         @include('partials.header')
         
         <main id="site_main">

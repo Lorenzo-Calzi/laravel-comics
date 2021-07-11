@@ -48,6 +48,9 @@ header .bottom_header ul a {
   color: #464646;
   padding-bottom: 44px;
 }
+header .bottom_header ul a.active {
+  color: #0282f9;
+}
 header .bottom_header ul a:hover {
   cursor: pointer;
   color: #0282f9;
